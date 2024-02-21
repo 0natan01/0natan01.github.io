@@ -1,0 +1,59 @@
+.imagens-slider{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+}
+
+.imagens-slider .slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute; 
+    opacity: 0;
+    transition: 0.5s ease-out;
+    align-items: center;
+}
+
+.imagens-slider .slide.mostrar{
+    opacity: 1;
+}
+
+.slide-gojo {
+    background-image: url(./imagens/satoru-gojo-jujutsu-3840x2160-9292.jpg);
+}
+
+.slide-sukuna{
+    background-image: url(./imagens/sukuna.jpeg);
+}
+
+.slide-megumi{
+    background-image: url(./imagens/megumi.jpeg);
+}
+
+.slide-itadori{
+    background-image: url(./imagens/itadori.jpeg);
+}
+
+.seta-avancar , .seta-voltar{
+    position: absolute;
+    z-index: 1;  
+}
+
+
+.seta-voltar{
+    left: 4%;
+}
+
+.seta-avancar{
+    right: 4%;
+    transform: rotateY(180deg);
+}
+
+.opacidade{
+    opacity: 0.6;
+    cursor: default;
+}
+ 
